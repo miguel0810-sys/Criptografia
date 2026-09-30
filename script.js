@@ -9,6 +9,7 @@ function criptografar() {
   // Remove espaços nas pontas e transforma maiúsculas em minúsculas.
   const palavra = campo.value.trim().toLowerCase();
   let novaPalavra = "";
+  
   mensagem.textContent = "";
   lista.replaceChildren();
   if (palavra === "" || !/^[a-z]+$/.test(palavra)) {
